@@ -8,6 +8,8 @@ RestAPIDemo is a RESTful API built with .NET 10 that manages people, their inter
 
 ## 🏗️ Architecture & Data Model
 
+![Database Diagram](database-diagram.png)
+
 The project uses a **relational database design** with the following structure:
 
 - **Person**: Core entity representing individuals with contact information
@@ -47,6 +49,8 @@ The API will be available at `https://localhost:5001`
 ## 🌱 Seed Data
 
 The database includes 10 sample persons and 10 interests with realistic associations.
+
+
 
 ## 💡 Future Improvements
 
