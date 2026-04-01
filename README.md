@@ -28,7 +28,7 @@ The project uses a **relational database design** with the following structure:
 
 ### Prerequisites
 - .NET 10 SDK
-- Visual Studio 2026
+- Visual Studio 2025
 
 ### Installation
 
@@ -41,10 +41,11 @@ The API will be available at `https://localhost:5001`
 
 ## 📚 API Endpoints
 
-- `GET /api/persons` – Get all persons
-- `POST /api/persons` – Create new person
-- `GET /api/interests` – Get all interests
-- `GET /api/personinterests` – Get all person-interest associations
+- GET `/api/persons` – Get all persons
+- GET `/api/persons/{personId}/interests` – Get all interests for a specific person
+- GET `/api/persons/{personId}/links` – Get all links for a specific person
+- POST `/api/persons/{personId}/interests/{interestId}` – Connect a person to an existing interest
+- POST `/api/persons/{personId}/interests/{interestId}/links` – Add a new link for a specific person and interest
 
 ## 🌱 Seed Data
 
@@ -55,7 +56,6 @@ The database includes 10 sample persons and 10 interests with realistic associat
 - Add pagination
 - Implement DTOs
 - Add validation
-- Add Swagger/OpenAPI documentation
 - Add unit tests
 - Add authentication
 
